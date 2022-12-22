@@ -10,10 +10,12 @@ import AfterLogInPage.*;
  */
 public class LogInForm extends javax.swing.JFrame {
 
+
     /**
      * Creates new form LogInForm
      */
     public LogInForm() {
+     //   setLocationRelativeTo(null);
         initComponents();
     }
 
