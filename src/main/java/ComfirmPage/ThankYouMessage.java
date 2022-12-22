@@ -30,7 +30,7 @@ public class ThankYouMessage extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        programCloseButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -40,7 +40,12 @@ public class ThankYouMessage extends javax.swing.JFrame {
 
         jLabel3.setText("Hope you will enjoy your journey and Dont forget to share your experiense with us");
 
-        jButton1.setText("Close");
+        programCloseButton.setText("Close");
+        programCloseButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                programCloseButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -60,7 +65,7 @@ public class ThankYouMessage extends javax.swing.JFrame {
                                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(301, 301, 301)
-                        .addComponent(jButton1)))
+                        .addComponent(programCloseButton)))
                 .addContainerGap(150, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -73,7 +78,7 @@ public class ThankYouMessage extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(jLabel3)
                 .addGap(73, 73, 73)
-                .addComponent(jButton1)
+                .addComponent(programCloseButton)
                 .addContainerGap(185, Short.MAX_VALUE))
         );
 
@@ -89,7 +94,13 @@ public class ThankYouMessage extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void programCloseButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_programCloseButtonActionPerformed
+        // TODO add your handling code here:
+        dispose();
+    }//GEN-LAST:event_programCloseButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -127,10 +138,10 @@ public class ThankYouMessage extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton programCloseButton;
     // End of variables declaration//GEN-END:variables
 }

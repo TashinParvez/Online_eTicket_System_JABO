@@ -15,7 +15,7 @@ public class LogInForm extends javax.swing.JFrame {
      * Creates new form LogInForm
      */
     public LogInForm() {
-     //   setLocationRelativeTo(null);
+   //   setLocationRelativeTo(null);
         initComponents();
     }
 
@@ -155,6 +155,7 @@ public class LogInForm extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void accountCreatButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_accountCreatButtonActionPerformed
