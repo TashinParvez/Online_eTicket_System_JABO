@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package com.mycompany.online_eticket_system_jabo.ForntPages;
-
+import AfterLogInPage.*;
 /**
  *
  * @author Tashin Parvez
@@ -35,7 +35,7 @@ public class LogInForm extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         logInemailOrHandlle = new javax.swing.JTextField();
         logInButton = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        accountCreatButton = new javax.swing.JButton();
         jPasswordField1 = new javax.swing.JPasswordField();
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -63,8 +63,18 @@ public class LogInForm extends javax.swing.JFrame {
         logInemailOrHandlle.setText("Enter email or handle name");
 
         logInButton.setText("LogIn");
+        logInButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                logInButtonActionPerformed(evt);
+            }
+        });
 
-        jButton1.setText("Creat new Account");
+        accountCreatButton.setText("Creat new Account");
+        accountCreatButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                accountCreatButtonActionPerformed(evt);
+            }
+        });
 
         jPasswordField1.setText("jPasswordField1");
 
@@ -82,7 +92,7 @@ public class LogInForm extends javax.swing.JFrame {
                                 .addComponent(logInButton, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGroup(jPanel2Layout.createSequentialGroup()
                                     .addGap(10, 10, 10)
-                                    .addComponent(jButton1))))
+                                    .addComponent(accountCreatButton))))
                         .addGroup(jPanel2Layout.createSequentialGroup()
                             .addGap(51, 51, 51)
                             .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE))))
@@ -98,7 +108,7 @@ public class LogInForm extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(logInButton, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(jButton1)
+                .addComponent(accountCreatButton)
                 .addContainerGap(23, Short.MAX_VALUE))
         );
 
@@ -145,6 +155,21 @@ public class LogInForm extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void accountCreatButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_accountCreatButtonActionPerformed
+        // TODO add your handling code here:
+        AccountCreatPage newAccount = new AccountCreatPage();
+        dispose();
+        newAccount.show();
+    }//GEN-LAST:event_accountCreatButtonActionPerformed
+
+    private void logInButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logInButtonActionPerformed
+        // TODO add your handling code here:
+        TripDetails newTrip = new TripDetails();
+        dispose();
+        newTrip.show();
+        
+    }//GEN-LAST:event_logInButtonActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -181,8 +206,8 @@ public class LogInForm extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton accountCreatButton;
     private javax.swing.JLabel applicationName;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
