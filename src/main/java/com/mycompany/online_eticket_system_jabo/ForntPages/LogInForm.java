@@ -79,7 +79,7 @@ public class LogInForm extends javax.swing.JFrame {
         });
 
         jPasswordField1.setText("jPasswordField1");
-// march with mushfiq
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
